@@ -1,5 +1,5 @@
 var debugMode = true;
-var luresList = ['Fånga', 'Mata', 'Klappa'];
+var luresList = ['Fånga!', 'Mata', 'Klappa'];
 var targetLat = 55.704053;
 var targetLong = 13.238263;
 var trackingTimer = setTimeout(showPosition, 1000);
