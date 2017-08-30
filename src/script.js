@@ -1,7 +1,7 @@
 var debugMode = true;
-var luresList = ['Hallon', 'Lakrits', 'Pizza', 'Blod'];
-var targetLat = 55.6040152;
-var targetLong = 12.9987585;
+var luresList = ['Fånga', 'Mata', 'Klappa'];
+var targetLat = 55.704053;
+var targetLong = 13.238263;
 
 
 DomReady.ready(function () {
