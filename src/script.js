@@ -14,7 +14,7 @@ DomReady.ready(function () {
 function setUpNewGame(){
     debugOut("Up and running");
     generateInput(3);
-    trackingInterval = setInterval(findDistanceToMonster, 500);
+    trackingInterval = setInterval(findDistanceToMonster, 100);
 }
 
 function debugOut(str){
