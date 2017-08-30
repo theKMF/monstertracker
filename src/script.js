@@ -1,8 +1,8 @@
 var debugMode = true;
-var luresList = ['Fånga!', 'Mata', 'Klappa'];
+var luresList = ['Fånga', 'Mata', 'Klappa'];
 var targetLat = 55.704053;
 var targetLong = 13.238263;
-var trackingTimer;
+var trackingInterval;
 
 
 DomReady.ready(function () {
@@ -14,7 +14,7 @@ DomReady.ready(function () {
 function setUpNewGame(){
     debugOut("Up and running");
     generateInput(3);
-    trackingTimer = setTimeout(findDistanceToMonster, 1000);
+    trackingInterval = setInterval(findDistanceToMonster, 500);
 }
 
 function debugOut(str){
