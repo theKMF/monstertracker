@@ -14,7 +14,7 @@ DomReady.ready(function () {
 function setUpNewGame(){
     debugOut("Up and running");
     generateInput(3);
-    trackingInterval = setInterval(findDistanceToMonster, 100);
+    trackingInterval = setInterval(findDistanceToMonster, 250);
 }
 
 function debugOut(str){
@@ -37,7 +37,8 @@ function getLocation() {
 
 function showPosition(position) {
   var theDist =  getDistanceFromLatLonInKm( position.coords.latitude, position.coords.longitude, targetLat, targetLong);
-   demo.innerHTML =(theDist * 1000) + ' meters';
+  var inMeters = Math.floor(theDist * 1000); 
+  demo.innerHTML =(theDist * 1000) + '.' + getRandomInt(9) + ' meters';
 }
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
