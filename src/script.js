@@ -38,7 +38,7 @@ function getLocation() {
 function showPosition(position) {
   var theDist =  getDistanceFromLatLonInKm( position.coords.latitude, position.coords.longitude, targetLat, targetLong);
   var inMeters = Math.floor(theDist * 1000); 
-  demo.innerHTML =(theDist * 1000) + '.' + getRandomInt(9) + ' meters';
+  demo.innerHTML = inMeters + '.' + getRandomInt(9) + ' meters';
 }
 
 function getDistanceFromLatLonInKm(lat1,lon1,lat2,lon2) {
